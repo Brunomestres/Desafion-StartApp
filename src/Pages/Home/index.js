@@ -38,7 +38,7 @@ export default function Home() {
             resolve(value);
             setErro(false)
             setLoading(false);
-          },3000)
+          },2000)
         })).catch(error => {
           console.log(error.message);
           setErro(true)
@@ -49,7 +49,6 @@ export default function Home() {
         if(response){
           setMovies(response.data.results);
         }
-        console.log(response);
       }
       return;
     }
